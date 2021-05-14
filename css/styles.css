@@ -1,0 +1,26 @@
+/* Глобальное исправление свойства border0box*/
+:root {
+    box-sizing: border-box;
+    font-size: 0.875em;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+/*body {
+    font-family: ;
+}*/
+
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.nav-list {
+    display: flex;
+    align-items: justify;
+}
+}
