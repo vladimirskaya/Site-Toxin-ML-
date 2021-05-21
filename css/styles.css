@@ -11,35 +11,42 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: rgb(182, 148, 214);
+    --main-font: 'Montserrat', sans-serif;
+    --main-bgColor: rgb(182, 148, 214);
+    --darkShade100: hsla(238, 52%, 25%, 1);
+    --darkShade75 : hsla(238, 52%, 25%, 0.75);
+    --darkShade50 : hsla(238, 52%, 25%, 0.5);
+    --darkShade25 : hsla(238, 52%, 25%, 0.25);
+    --darkShade05 : hsla(238, 52%, 25%, 0.05);
+    --primaryColor: hsla(259, 100%, 81%, 1);
+    --secondaryColor: hsla(145, 50%, 62%, 1);
+
+    font-family: var(--main-font);
+    color: var(--darkShade75);
+    background-color: var(var(--main-bgColor));
+}
+
+h1, h2,h3 {
+    font-style: normal;
+    font-weight: bold;
+    color: var(--darkShade100);
 }
 
 h1 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
     font-size: 24px;
     line-height: 29px;
 }
 
 h2 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
     font-size: 19px;
     line-height: 23px;
 }
 
 h3 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     /* identical to box height */
     text-transform: uppercase;
-    color: #1F2041;
 }
 
 .cointainer {
