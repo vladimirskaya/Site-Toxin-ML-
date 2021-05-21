@@ -10,17 +10,81 @@
     box-sizing: inherit;
 }
 
-/*body {
-    font-family: ;
-}*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(182, 148, 214);
+}
+
+h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+}
+
+h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    text-transform: uppercase;
+    color: #1F2041;
+}
+
+.cointainer {
+    margin-top: 0;
+    margin-right: 140px;
+    margin-bottom: 0;
+    margin-left: 140px;
+}
+
+/* Styles for header */
 
 .header {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    height: 70px;
+    background-color: rgb(97, 86, 86);
 }
+.header .cointainer {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 18px 0;
+    background-color: #fff;
+}
+
 .nav-list {
     display: flex;
-    align-items: justify;
+    align-content: center;
+   background-color: rgb(155, 109, 109);
 }
+
+.nav-list li {  
+    margin-right: 20px;
+}
+
+/* Styles for main (imgs and form) */
+.main {
+    position: relative; /* Относительное позиционирование */
+}
+
+.search__form {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 70px;
+    left: 140px; /* Положение от правого края */
+    
+    width: 380px;
+    height: 374px;
+    background-color: #fff;
+    border-radius: 3px;
 }
