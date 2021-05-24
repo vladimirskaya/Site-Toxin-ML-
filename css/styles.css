@@ -42,11 +42,22 @@ h2 {
     line-height: 23px;
 }
 
-h3 {
+a, h3 {
     font-size: 12px;
     line-height: 15px;
     /* identical to box height */
     text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+	color: var(--darkShade50);
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .cointainer {
@@ -54,31 +65,74 @@ h3 {
     margin-right: 140px;
     margin-bottom: 0;
     margin-left: 140px;
+	/*outline;*/
 }
 
 /* Styles for header */
 
 .header {
-    height: 70px;
-    background-color: rgb(97, 86, 86);
+    /* background-color: rgb(97, 86, 86);*/
 }
 .header .cointainer {
     display: flex;
-    align-content: center;
-    justify-content: space-between;
-    padding: 18px 0;
+	justify-content: space-between;
+	align-items: center;
+    /* padding: 18px 0; */
     background-color: #fff;
+}
+
+.logo {
+	margin: 15px 0;
 }
 
 .nav-list {
     display: flex;
-    align-content: center;
-   background-color: rgb(155, 109, 109);
+    margin: 26px 0;
+	align-items: center;
+	color: var(--darkShade50);
+    /*background-color: rgb(155, 109, 109);*/
 }
 
-.nav-list li {  
-    margin-right: 20px;
+.nav-list li +li {  
+    margin-left: 20px;
 }
+
+.added-after:after {
+	content: "";
+	display: inline-block;
+	background: url(../img/expand_more.png) center no-repeat scroll/* bg-attacment: local?*/;
+	
+	width: 24px;
+	height: 10px;
+	/* margin-top: 26px;
+	border-style: dot;
+    border-width: 5px;
+    border-color: var(--darkShade50) transparent transparent transparent;
+*/
+}
+
+.added-after:hover::after {
+	cursor: pointer; /*hmhmhmhm*/
+	
+}
+
+.btn {	
+	border: solid 3px var(--primaryColor);
+	border-radius: 22px;
+	background-color: var(--primaryColor);
+	
+}
+
+.btn:hover{
+	background-color: var(--whiteColor);
+	color: var(--primaryColor);
+}
+
+.btn a h3{
+	color: var(--whiteColor);
+	margin: 10px 20px;
+}
+
 
 /* Styles for main (imgs and form) */
 .main {
