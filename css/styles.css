@@ -120,6 +120,8 @@ ul {
 	border: solid 3px var(--primaryColor);
 	border-radius: 22px;
 	background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    margin-left: 20px;
 	
 }
 
@@ -128,8 +130,8 @@ ul {
 	color: var(--primaryColor);
 }
 
-.btn a h3{
-	color: var(--whiteColor);
+.btn h3{
+	color: inherit;
 	margin: 10px 20px;
 }
 
