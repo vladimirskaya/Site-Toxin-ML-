@@ -20,8 +20,12 @@ body {
     --darkShade05 : hsla(238, 52%, 25%, 0.05);
     --primaryColor: hsla(259, 100%, 81%, 1);
     --secondaryColor: hsla(145, 50%, 62%, 1);
+	--whiteColor: #fff;
+	
+	--heightHeadFoot: 70px;
 
     font-family: var(--main-font);
+	line-height: 17px;
     color: var(--darkShade75);
     background-color: var(var(--main-bgColor));
 }
@@ -49,9 +53,13 @@ a, h3 {
     text-transform: uppercase;
 }
 
+p, li {
+	color: var(--darkShade50);
+}
+
 a {
 	text-decoration: none;
-	color: var(--darkShade50);
+	color: inherit;
 }
 
 ul {
@@ -60,40 +68,55 @@ ul {
 	padding: 0;
 }
 
-.cointainer {
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	max-width: 1440px;
+	
     margin-top: 0;
-    margin-right: 140px;
+    margin-right: auto;
     margin-bottom: 0;
-    margin-left: 140px;
-	/*outline;*/
+    margin-left: auto;
+	
+	padding-right: 75px;
+	padding-left: 75px;
+	outline: 1px solid red;
+	
+	
 }
 
 /* Styles for header */
 
 .header {
-    /* background-color: rgb(97, 86, 86);*/
+	height: var(--heightHeadFoot);
+	padding-top: 15px;
+	padding-bottom: 15px;
+    background-color: rgb(97, 86, 86);
 }
 .header .cointainer {
     display: flex;
-	justify-content: space-between;
-	align-items: center;
-    /* padding: 18px 0; */
-    background-color: #fff;
+    /*background-color: #fff; */
 }
 
 .logo {
-	margin: 15px 0;
+	width: 106px;
+	max-height: 40px;
 }
 
-.nav-list {
+.nav {
     display: flex;
-    margin: 26px 0;
 	align-items: center;
 	color: var(--darkShade50);
     /*background-color: rgb(155, 109, 109);*/
 }
 
-.nav-list li +li {  
+.nav__list {
+	display: flex;
+}
+
+.nav__list li +li {  
     margin-left: 20px;
 }
 
@@ -116,29 +139,43 @@ ul {
 	
 }
 
-.btn {	
-	border: solid 3px var(--primaryColor);
-	border-radius: 22px;
-	background-color: var(--primaryColor);
-    color: var(--whiteColor);
-    margin-left: 20px;
+.nav__btn {
+	display: flex;
+	justify-content: space-between;
 	
 }
 
-.btn:hover{
-	background-color: var(--whiteColor);
-	color: var(--primaryColor);
+.btn {	
+	border: solid 2px var(--primaryColor);
+	border-radius: 22px;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    color: var(--whiteColor);
+    margin-left: 20px;
 }
 
 .btn h3{
-	color: inherit;
 	margin: 10px 20px;
+	color: inherit;
 }
+
+.btn:hover{
+	background: var(--whiteColor);
+	color: var(--primaryColor);
+}
+
+
 
 
 /* Styles for main (imgs and form) */
 .main {
-    position: relative; /* Относительное позиционирование */
+    
+}
+
+.main__form{
+	position: relative; /* Относительное позиционирование */
+	outline: 3px solid green;
+	margin: 0;
+	padding: 0;
 }
 
 .search__form {
@@ -150,4 +187,97 @@ ul {
     height: 374px;
     background-color: #fff;
     border-radius: 3px;
+	
+	display: flex;
+	flex-wrap: wrap;
+	
+	padding: 40px 30px;
+	align-self: center;
+}
+
+.checkin {
+	flex: 50%;
+}
+.checkout {
+	flex: 50%;
+}
+.amount-rerson {
+	flex: 100%;
+}
+.form-btn {
+	flex: 100%;
+	font-weight: bold;
+}
+
+.img__list {
+	
+	outline: 2px solid black;
+}
+
+.main__image {
+	max-width: 1290px;
+}
+
+
+	/* Styles for footer */
+
+.footer {
+	
+}
+
+.footer .container {
+	display: block;
+	outline: solid 1px black;
+}
+
+.footer__top, .footer__bottom {
+	display: flex;
+	justify-content: space-between;
+	
+	outline: solid 8px pink;
+}
+
+.footer__top {
+	padding: 100px 0;
+}
+
+.footer__about {
+	padding-right: 20px;
+	line-height: 24px;
+	/*padding-left: 5px;*/
+}
+
+.footer__follow {
+	padding-left: 20px;
+	/*padding-right: 5px;*/
+}
+
+.footer__top > div {
+	background-color: yellow;
+	flex: 25%;
+}
+
+.footer__top > ul  {
+	flex: 15%;
+	padding: 0 10px;
+	outline: solid 1px blue;
+}
+
+.footer__top * > * + *{
+	margin-top: 20px;
+}
+
+.footer__bottom {
+
+	height: var(--heightHeadFoot);
+	align-items: center;
+	
+}
+
+.footer__bottom li {
+	display: inline-block;
+}
+
+.footer__bottom li + li {
+	margin-left: 20px;
 }
