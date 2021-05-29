@@ -13,17 +13,19 @@
 <body>
     
     <header class="header">
-        <div class="cointainer">
-            <div class="logo">
-                <img src="img/Logo.png" alt="">
-            </div>
-            <nav>
-                <ul class="nav-list">
+        <div class="container">
+            
+                <img class="logo" src="img/Logo.png" alt="">
+           
+            <nav class="nav">
+                <ul class="nav__list">
                     <li>О нас</li>
                     <li class="added-after">Услуги</li>
                     <li>Вакансии</li>
                     <li>Новости</li>
                     <li class="added-after">Соглашения</li>
+				</ul>
+				<ul class="nav__btn">
                     <a class="btn" href="#"><h3>Войти</h3></a>
                     <a class="btn" href="#"><h3>Зарегистрироваться</h3></a>
                 </ul>
@@ -31,60 +33,94 @@
         </div>
     </header>
     <main class="main">
+	  <div class="container">
         <!--картинки три плюс форма и небольшой параграф-->
-        <form class='search__form'>
-            <h1>Найдём номера под ваши пожелания</h1>
-            <h3>Прибытие</h3>
-            <input type="date" title="Введите дату заезда">
-            <h3>Выезд</h3>
-            <input type="date" title="Введите дату выезда">
-            <h3>Гости</h3>
-            <input type="number" title="Введите количество гостей">
-            <button>Подобрать номер</button>
-        </form>
-        <!--картинки-->
-        <!-- <img src="./img/main-image1.png" alt="">
-        <img src="./img/main-image2.png" alt=""> -->
-        <img src="./img/main-image3.png" alt="">
-        <p>Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
+		
+        
+			<div class="img__list">
+			  <div class="main__form">
+		        <form class='search__form' name="search__form">
+                  <h1>Найдём номера под ваши пожелания</h1>
+                  <div class="date-checkin">
+						<h3>Прибытие</h3>
+						<input type="date" title="Введите дату заезда">
+				  </div>
+				  <div class="date-checkout">
+						<h3>Выезд</h3>
+						<input type="date" title="Введите дату выезда">
+				  </div>
+                  <div class="amount-person">
+					<h3>Гости</h3>
+					<input type="number" title="Введите количество гостей">
+				  </div>
+                  
+                  <button class="btn form-btn"><h3>Подобрать номер</h3></button>
+                </form>
+		       </div>
+			  <!--картинки-->
+			  <!-- <img src="./img/main-image1.png" alt="">
+			  <img src="./img/main-image2.png" alt=""> -->
+			  <img class="main__image" src="./img/main-image3.png" alt="">
+			  <p>Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
+		    </div>
+		
+	  </div>
     </main>
+	
     <footer class="footer">
-        <ul>
-            <div>
-                <img src="./img/Logo.png" alt="logo">
-                <p>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
-            </div>
-            <ul>
-                <p>Навигация</p>
-                <li>О нас</li>
-                <li>НОвости</li>
-                <li>Служба поддержки</li>
-                <li>Услуги</li>
-            </ul>
-            <ul>
-                <p>О нас</p>
-                <li>О сервисе</li>
-                <li>Наша команда</li>
-                <li>Вакансии</li>
-                <li>Инвесторы</li>
-            </ul>
-            <ul><p>Служба поддержки</p>
-                <li>Соглашение</li>
-                <li>Сообщества</li>
-                <li>Связь с нами</li>
-            </ul>
-            <div>
-                <p>Подписка</p>
-                <p>Получайте специальные предложения и новости сервиса</p>
-                <input type="email">
-            </div>
-        </ul>
-        <p>Copyright © 2018 Toxin отель. Все права защищены.</p>
-        <ul>
-            <li><img src="./img/twitter.png" alt=""></li>
-            <li><img src="./img/facebook.png" alt=""></li>
-            <li><img src="./img/instagram.png" alt=""></li>
-        </ul>
+        <div class="container">
+
+            <div class="footer__top">
+				<div class="footer__about">
+					<img class="logo" src="./img/Logo.png" alt="logo">
+					<p>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+				</div>
+		
+				<ul class="footer__nav">
+					<h3>Навигация</h3>
+					<li>О нас</li>
+					<li>Новости</li>
+					<li>Служба поддержки</li>
+					<li>Услуги</li>
+				</ul>
+			
+				<ul class="footer__about-us">
+					<h3>О нас</h3>
+					<li>О сервисе</li>
+					<li>Наша команда</li>
+					<li>Вакансии</li>
+					<li>Инвесторы</li>
+				</ul>
+				
+				<ul class="footer__support">
+					<h3>Служба поддержки</h3>
+					<li>Соглашение</li>
+					<li>Сообщества</li>
+					<li>Связь с нами</li>
+				</ul>
+				
+				<div class="footer__follow">
+					<h3>Подписка</h3>
+					<p>Получайте специальные предложения и новости сервиса</p>
+					<input type="email">
+				</div>
+        
+			</div>
+			
+			<div class="footer__bottom">
+				<p>Copyright © 2018 Toxin отель. Все права защищены.</p>
+				<ul>
+					<li><img src="./img/twitter.png" alt=""></li>
+					<li><img src="./img/facebook.png" alt=""></li>
+					<li><img src="./img/instagram.png" alt=""></li>
+				</ul>
+			</div>
+			
+			
+		</div>
+		
+		
+        
     </footer>
 </body>
 </html>
