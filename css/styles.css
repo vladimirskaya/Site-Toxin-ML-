@@ -27,7 +27,7 @@ body {
     font-family: var(--main-font);
 	line-height: 17px;
     color: var(--darkShade75);
-    background-color: var(var(--main-bgColor));
+    background-color: var(--main-bgColor);
 }
 
 h1, h2,h3 {
@@ -189,24 +189,70 @@ ul {
     border-radius: 3px;
 	
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
+
+
 	
-	padding: 40px 30px;
-	align-self: center;
+	padding: 40px 30px 30px 30px;
+	
 }
 
-.checkin {
-	flex: 50%;
+.search__form  > h1{
+	margin-bottom: 21px;
 }
-.checkout {
-	flex: 50%;
+
+.dates {
+	display: flex;
+	margin-bottom: 21px;
 }
-.amount-rerson {
-	flex: 100%;
+
+.date-checkin {
+	margin-right: 20px;
+	
 }
+.amount-person {
+	margin-bottom: 30px;
+}
+
+.title__input {
+	margin-bottom: 5px;
+}
+
+.form-input {
+	width: 150px;
+	height: 44px;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	border-radius: 4px;
+	background: #FFFFFF;	
+}
+
+.form-input[placeholder] { /* WebKit browsers */
+    font-family: var(--main-font);
+	font-size: 14px;
+    line-height: 18px;
+    /* identical to box height */
+    text-transform: uppercase;
+	color: var(--darkShade75);
+	
+	padding-left: 15px;
+}
+
+.amount-person .form-input {
+	width: 320px;
+}
+
 .form-btn {
-	flex: 100%;
+	position: relative;
+	margin: 0;
 	font-weight: bold;
+}
+
+.arrow {
+	width: 16px;
+	height: 16px;
+	position: absolute; /* Абсолютное позиционирование */
+    top: 10px;
+    left: 291px; /* Положение от правого края */
 }
 
 .img__list {
