@@ -32,7 +32,8 @@
             </nav>
         </div>
     </header>
-    <main class="main">
+   
+     <main class="main">
 	  <div class="container">
         <!--картинки три плюс форма и небольшой параграф-->
 		
@@ -41,20 +42,30 @@
 			  <div class="main__form">
 		        <form class='search__form' name="search__form">
                   <h1>Найдём номера под ваши пожелания</h1>
-                  <div class="date-checkin">
-						<h3>Прибытие</h3>
-						<input type="date" title="Введите дату заезда">
-				  </div>
-				  <div class="date-checkout">
-						<h3>Выезд</h3>
-						<input type="date" title="Введите дату выезда">
+                  <div class="dates">
+					<div class="date-checkin">
+						<h3 class="title__input">Прибытие</h3>
+						<input class="form-input" type="date" 
+							title="Введите дату заезда" placeholder="ДД.ММ.ГГГГ">
+					</div>
+					<div class="date-checkout">
+						<h3 class="title__input">Выезд</h3>
+						<input class="form-input" type="date" 
+							title="Введите дату выезда" placeholder="ДД.ММ.ГГГГ">
+					</div>
 				  </div>
                   <div class="amount-person">
-					<h3>Гости</h3>
-					<input type="number" title="Введите количество гостей">
+					<h3 class="title__input">Гости</h3>
+					<input class="form-input" type="number" 
+						title="Введите количество гостей" placeholder=" Сколько гостей">
 				  </div>
                   
-                  <button class="btn form-btn"><h3>Подобрать номер</h3></button>
+                  
+					<button class="btn form-btn">
+						<h3>Подобрать номер</h3>
+						<img class="arrow" src="./img/arrow_forward.svg" alt="->">
+					</button>
+				  
                 </form>
 		       </div>
 			  <!--картинки-->
