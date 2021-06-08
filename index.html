@@ -11,7 +11,20 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <div class="look-calendar">
+		<table id="calendar">
+			<thead>
+				<tr>
+					<td><b>‹</b>
+					<td colspan="5">
+					<td><b>›</b>
+				<tr class="dn"><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+			</thead>
+			<tbody></tbody>
+		</table>
+	</div>
+	
+	
     <header class="header">
         <div class="container">
             
@@ -63,7 +76,7 @@
                   
 					<button class="btn form-btn">
 						<h3>Подобрать номер</h3>
-						<img class="arrow" src="./img/arrow_forward.svg" alt="->">
+						<div class="arrow"></div>
 					</button>
 				  
                 </form>
@@ -130,8 +143,18 @@
 			
 		</div>
 		
-		
-        
+	
+	<div class="must-do">
+		<h2>что нужно тут доделать</h2>
+		<ul>
+			<li>при ховере задать другую стрелку</li>
+			<li>поднять спан на имдж</li>
+			<li>добавить стрелку дарк на инпут в футере</li>
+			<li>заменить значки календарика на просто галки в форме</li>
+		</ul>
+	</div>
+	
     </footer>
+	<script src="./js/main.js"></script>
 </body>
 </html>
