@@ -21,7 +21,9 @@ body {
     --primaryColor: hsla(259, 100%, 81%, 1);
     --secondaryColor: hsla(145, 50%, 62%, 1);
 	--whiteColor: #fff;
-	
+	--borderColor: hsla(238, 35%, 19%, 0.25);
+    --borderShadow: hsla(238, 35%, 19%, 0.05);
+
 	--heightHeadFoot: 70px;
 
     font-family: var(--main-font);
@@ -68,36 +70,34 @@ ul {
 	padding: 0;
 }
 
-.container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	
-	max-width: 1440px;
-	
-    margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-left: auto;
-	
-	padding-right: 75px;
-	padding-left: 75px;
-	/*outline: 1px solid red;*/
-	
-	
+/*sdddddddddsd00*/
+.mytable {
+    width: 300px;
+    height: 300px;
+    background-color: tomato;
+    border: 1px solid grey;
+}
+
+.myrow {
+    border: 1px solid green;
 }
 
 /* Styles for calendar */
 #calendar2 {
-    min-width: 320px;
-    font: monospace;
+    width: 320px;
+    height: 369px;
+    font: var(--main-font);
     line-height: 1.2em;
     font-size: 15px;
     text-align: center;
+    border: 1px solid var(--borderColor);
+    border-radius: 4px;
+    box-shadow: var(--borderShadow);
   }
   #calendar2 thead tr:last-child {
     font-size: small;
     color: rgb(85, 85, 85);
+    outline: tomato;
   }
   #calendar2 thead tr:nth-child(1) td:nth-child(2) {
     color: rgb(50, 50, 50);
@@ -116,17 +116,29 @@ ul {
     color: #fff;
   }
 
+
+  .container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  
+    outline: 1px solid red;
+    background-color: palegreen;
+    
+    
+  }
+
+
 /* Styles for header */
 
 .header {
 	height: var(--heightHeadFoot);
-	padding-top: 15px;
-	padding-bottom: 15px;
-    /*background-color: rgb(97, 86, 86);*/
+
+  background-color: rgb(97, 86, 86);
 }
-.header .cointainer {
+.header.cointainer {
     display: flex;
-    /*background-color: #fff; */
+    background-color: #fff;
 }
 
 .logo {
