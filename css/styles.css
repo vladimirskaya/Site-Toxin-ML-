@@ -118,6 +118,12 @@ ul {
 }
 
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -159,6 +165,7 @@ ul {
   display: block;
   width: 106px;
   max-height: 40px;
+  margin-right: 15px;
 }
 
 .header__nav-list {
@@ -180,9 +187,7 @@ ul {
 .nav__link:after {
   content: "";
   display: inline-block;
-  background: url(../img/expand_more.png) center no-repeat scroll
-    /* bg-attacment: local?*/
-  ;
+  background: url(../img/expand_more.png) center no-repeat scroll;
 
   width: 24px;
   height: 10px;
@@ -212,20 +217,23 @@ ul {
   background: var(--whiteColor);
   color: var(--primaryColor);
 }
-
-
-
-
+/* Header's style end */
 
 /* Styles for main (imgs and form) */
-.main {}
-
-.main__form {
+.main {
   position: relative;
-  /* Относительное позиционирование */
-  /*outline: 3px solid green;*/
-  margin: 0;
-  padding: 0;
+}
+
+.main__images {
+  height: 1022px; 
+}
+
+.main__image {
+  max-width: 100%;  
+}
+
+.main_image.hidden {
+  display: none;
 }
 
 .search__form {
@@ -243,10 +251,7 @@ ul {
   display: flex;
   flex-direction: column;
 
-
-
   padding: 40px 30px 30px 30px;
-
 }
 
 .search__form>h1 {
@@ -279,6 +284,10 @@ ul {
   background: #FFFFFF;
 }
 
+.amount-person .form-input {
+  width: 320px;
+}
+
 .form-input[placeholder] {
   /* WebKit browsers */
   font-family: var(--main-font);
@@ -291,9 +300,8 @@ ul {
   padding-left: 15px;
 }
 
-.amount-person .form-input {
-  width: 320px;
-}
+
+
 
 .form-btn {
   position: relative;
@@ -318,9 +326,6 @@ ul {
   outline: 2px solid black;
 }
 
-.main__image {
-  max-width: 1290px;
-}
 
 
 /* Styles for footer */
@@ -371,19 +376,50 @@ ul {
 }
 
 .footer__bottom {
-
   height: var(--heightHeadFoot);
-  align-items: center;
 
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
 }
 
-.footer__bottom li {
-  display: inline-block;
+.social {
+  background-color: blueviolet;
 }
 
-.footer__bottom li+li {
+.social__link {
+  background-color:brown;
+}
+
+.social {
+  display: flex; 
+}
+
+.social__item {
   margin-left: 20px;
+} 
+
+ .social__link {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+.social__link--vk {
+  background-image: url("/img/svg/twitter.svg");
+}
+
+.social__link--fb {
+  background-image: url("/img/svg/fb.svg");
+}
+
+.social__link--insta {
+  background-image: url("/img/svg/inst.svg");
+}
+
 
 /*ДОпЭлементы*/
 

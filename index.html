@@ -47,32 +47,34 @@
 			</div>
            		
         
-    </header>
+    	</header>
    
      <main class="main">
-	  <div class="container">
-        <!--картинки три плюс форма и небольшой параграф-->
-		
-        
-			<div class="img__list">
-			  <div class="main__form">
+		<div class="main__images">
+			<!--картинки-->
+			  <img src="./img/main-image1.png" alt="" class="main_image hidden">
+			  <img src="./img/main-image2.png" alt="" class="main_image hidden">
+			  <img src="./img/main-image3.png" alt="" class="main__image" >
+		</div>
+	    <div class="wrapper">
+		  <div class="main__form">
 		        <form class='search__form' name="search__form">
                   <h1>Найдём номера под ваши пожелания</h1>
                   <div class="dates">
 					<div class="date-checkin">
 						<h3 class="title__input">Прибытие</h3>
-						<input class="form-input" type="date" 
+						<input class="form-input" type="text" 
 							title="Введите дату заезда" placeholder="ДД.ММ.ГГГГ">
 					</div>
 					<div class="date-checkout">
 						<h3 class="title__input">Выезд</h3>
-						<input class="form-input" type="date" 
+						<input class="form-input" type="text" 
 							title="Введите дату выезда" placeholder="ДД.ММ.ГГГГ">
 					</div>
-				  </div>
+				  </div>	
                   <div class="amount-person">
 					<h3 class="title__input">Гости</h3>
-					<input class="form-input" type="number" 
+					<input class="form-input" type="text" 
 						title="Введите количество гостей" placeholder=" Сколько гостей">
 				  </div>
                   
@@ -84,10 +86,7 @@
 				  
                 </form>
 		       </div>
-			  <!--картинки-->
-			  <!-- <img src="./img/main-image1.png" alt="">
-			  <img src="./img/main-image2.png" alt=""> -->
-			  <img class="main__image" src="./img/main-image3.png" alt="">
+			  
 			  <p>Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
 		    </div>
 		
@@ -95,7 +94,7 @@
     </main>
 	
     <footer class="footer">
-        <div class="container">
+        <div class="wrapper">
 
             <div class="footer__top">
 				<div class="footer__about">
@@ -136,10 +135,17 @@
 			
 			<div class="footer__bottom">
 				<p>Copyright © 2018 Toxin отель. Все права защищены.</p>
-				<ul>
-					<li><img src="./img/twitter.png" alt=""></li>
-					<li><img src="./img/facebook.png" alt=""></li>
-					<li><img src="./img/instagram.png" alt=""></li>
+				<!-- Ссылки оформлены бекграундом -->
+				<ul class="social">
+					<li class="social__item">
+						<a href="" class="social__link social__link--vk" aria-label="Мы во ВКонтакте"></a>
+					</li>
+					<li class="social__item">
+						<a href="" class="social__link social__link--fb" aria-label="Мы в Фейсбуке"></a>
+					</li>
+					<li class="social__item">
+						<a href="" class="social__link social__link--insta" aria-label="Мы в Инстаграмме"></a>
+					</li>
 				</ul>
 			</div>
 			
