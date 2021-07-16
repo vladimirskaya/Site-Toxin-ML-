@@ -226,14 +226,23 @@ img {
 
 .main__images {
   height: 1022px; 
+  width: 100%;
+  background: url("../img/main-image3.png") center no-repeat #cf87cf;
+  background-size: cover;
 }
 
-.main__image {
-  max-width: 100%;  
-}
+.main__slogan {
+  position: absolute;
+  bottom: 18px;
+  right: 134px;
 
-.main_image.hidden {
-  display: none;
+  width: 297px;
+  height: 48px;
+
+  text-align: right;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--darkShade75);
 }
 
 .search__form {
@@ -250,7 +259,6 @@ img {
 
   display: flex;
   flex-direction: column;
-
   padding: 40px 30px 30px 30px;
 }
 
@@ -282,10 +290,14 @@ img {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   background: #FFFFFF;
+  background-image:url("../img/svg/expand_more.svg");
+  background-repeat: no-repeat;
+  background-position: 90% center;
 }
 
 .amount-person .form-input {
   width: 320px;
+  background-position: 95% center;
 }
 
 .form-input[placeholder] {
@@ -301,33 +313,29 @@ img {
 }
 
 
-
-
 .form-btn {
   position: relative;
-  margin: 0;
+  width: 320px;
+  height: 44px;
+  margin: 0;  
+}
+
+.form-btn h3 {
+  display: inline-block;
+  color: var(--whiteColor);
   font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
 }
 
-.arrow {
-  width: 16px;
-  height: 16px;
+.btn-arrow {
   position: absolute;
-  /* Абсолютное позиционирование */
   top: 10px;
-  left: 291px;
-  /* Положение от правого края */
-  content: url('./img/arrow_forward.svg');
+  right: 5%;
+  outline: #323232;
+  margin-left: 40px;
 }
-}
-
-.img__list {
-
-  outline: 2px solid black;
-}
-
-
-
 /* Styles for footer */
 
 .footer {}
