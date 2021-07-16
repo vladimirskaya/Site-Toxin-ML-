@@ -279,11 +279,11 @@ img {
 
 .date-checkin {
   margin-right: 20px;
-
 }
 
 .amount-person {
   margin-bottom: 30px;
+  
 }
 
 .title__input {
@@ -318,6 +318,27 @@ img {
   padding-left: 15px;
 }
 
+.date-checkout {
+  position: relative;
+}
+
+.date-checkin {
+  position: relative;
+}
+
+.amount-person {
+  position: relative;
+}
+
+.input__link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  /* background-color: #dd45; */
+}
 
 .form-btn {
   position: relative;
@@ -478,8 +499,4 @@ img {
 #calendar tbody td.today {
   background: #dc0000;
   color: #fff;
-}
-
-.linklink {
-  background-color:rgb(44, 86, 122);
 }
