@@ -18,7 +18,7 @@ body {
   --darkShade50: hsla(238, 52%, 25%, 0.5);
   --darkShade25: hsla(238, 52%, 25%, 0.25);
   --darkShade05: hsla(238, 52%, 25%, 0.05);
-  --primaryColor: hsla(259, 100%, 81%, 1); 
+  --primaryColor: hsla(259, 100%, 81%, 1);
   --secondaryColor: hsla(145, 50%, 62%, 1);
   --whiteColor: #fff;
   --borderColor: hsla(238, 35%, 19%, 0.25);
@@ -74,50 +74,6 @@ ul {
   padding: 0;
 }
 
-
-/* Styles for calendar */
-#calendar2 {
-  width: 320px;
-  height: 369px;
-  font: var(--main-font);
-  line-height: 1.2em;
-  font-size: 15px;
-  text-align: center;
-  border: 1px solid var(--borderColor);
-  border-radius: 4px;
-  box-shadow: var(--borderShadow);
-}
-
-#calendar2 thead tr:last-child {
-  font-size: small;
-  color: rgb(85, 85, 85);
-  outline: tomato;
-}
-
-#calendar2 thead tr:nth-child(1) td:nth-child(2) {
-  color: rgb(50, 50, 50);
-}
-
-#calendar2 thead tr:nth-child(1) td:nth-child(1):hover,
-#calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
-  cursor: pointer;
-}
-
-#calendar2 tbody td {
-  color: rgb(44, 86, 122);
-}
-
-#calendar2 tbody td:nth-child(n+6),
-#calendar2 .holiday {
-  color: rgb(231, 140, 92);
-}
-
-#calendar2 tbody td.today {
-  background: rgb(220, 0, 0);
-  color: #fff;
-}
-
-
 img {
   display: block;
   max-width: 100%;
@@ -134,7 +90,6 @@ img {
 
 .wrapper {
   margin: 0 140px;
-
 }
 
 /* Styles for header */
@@ -202,7 +157,7 @@ img {
   border: solid 2px var(--primaryColor);
   border-radius: 22px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  
+
 }
 
 .btn {
@@ -213,7 +168,7 @@ img {
 .btn__title {
   font-style: normal;
   font-weight: bold;
-  
+
   color: inherit;
   text-transform: uppercase;
 }
@@ -231,10 +186,11 @@ img {
 }
 
 .main__images {
-  height: 1022px; 
+  height: 1022px;
   width: 100%;
   background: url("../img/main-image3.png") center no-repeat #cf87cf;
   background-size: cover;
+  margin-bottom: 100px;
 }
 
 .main__slogan {
@@ -283,7 +239,7 @@ img {
 
 .amount-person {
   margin-bottom: 30px;
-  
+
 }
 
 .title__input {
@@ -296,7 +252,7 @@ img {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   background: #FFFFFF;
-  background-image:url("../img/svg/expand_more.svg");
+  background-image: url("../img/svg/expand_more.svg");
   background-repeat: no-repeat;
   background-position: 90% center;
 }
@@ -344,7 +300,7 @@ img {
   position: relative;
   width: 320px;
   height: 44px;
-  margin: 0;  
+  margin: 0;
 }
 
 .btn-arrow {
@@ -355,12 +311,14 @@ img {
 }
 
 .form-btn:hover svg {
-  fill:rgba(188, 156, 255, 1);
+  fill: rgba(188, 156, 255, 1);
 }
 
 /* Main's styles end */
 
 /* Styles for footer */
+
+.footer {}
 
 .footer__top {
   display: grid;
@@ -369,43 +327,48 @@ img {
   /* outline: solid 8px pink; */
 }
 
-.footer__top {
-  padding: 100px 0;
-}
-
 .footer__top__item {
-  display: grid;
-  grid-template-rows: 1fr 3fr;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: left;
   /* background-color: yellow; */
 }
 
-.footer__top__item .logo {
-  margin-bottom: 35px;
+.footer__top__item {
+  /* display: grid;
+  grid-template-columns: subgrid;
+  grid-auto-columns:  auto; */
+}
+
+.footer__logo-link .logo {
+  padding: 0 0 35px 0;
 }
 
 .footer__top__item p {
   font-size: 14px;
-line-height: 24px;
+  line-height: 24px;
 }
 
 .footer__item-title {
   font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 15px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
 }
 
-.footer__item-desc * + * {
+.footer__item-desc *+* {
   margin-top: 20px;
   font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 17px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .footer__item-desc__link {
   opacity: 1;
 }
+
 .footer__item-desc__link:hover {
   color: rgba(31, 32, 65, 0.75);
 }
@@ -421,19 +384,19 @@ line-height: 17px;
   height: var(--heightHeadFoot);
 
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: space-between;
 }
 
 .social {
-  display: flex; 
+  display: flex;
 }
 
 .social__item {
   margin-left: 20px;
-} 
+}
 
- .social__link {
+.social__link {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -464,51 +427,45 @@ line-height: 17px;
 
 /*ДОпЭлементы*/
 
-.look-calendar {
+/* Styles for calendar */
+#calendar2 {
   width: 320px;
   height: 369px;
-  border: 1px solid hsla(238, 35%, 19%, 0, 25);
-  border-radius: 4px;
-  padding: 6px;
-
-}
-
-#calendar {
-  width: 100%;
+  font: var(--main-font);
   line-height: 1.2em;
   font-size: 15px;
   text-align: center;
-  border-spacing: 0px;
+  border: 1px solid var(--borderColor);
+  border-radius: 4px;
+  box-shadow: var(--borderShadow);
 }
 
-#calendar tr.dn td {
-  font-size: 15px;
-}
-
-#calendar thead tr:last-child {
+#calendar2 thead tr:last-child {
   font-size: small;
-  color: #555555;
+  color: rgb(85, 85, 85);
+  outline: tomato;
 }
 
-#calendar thead tr:nth-child(1) td:nth-child(2) {
-  color: #323232;
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+  color: rgb(50, 50, 50);
 }
 
-#calendar thead tr:nth-child(1) td:nth-child(1):hover,
-#calendar thead tr:nth-child(1) td:nth-child(3):hover {
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover,
+#calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
   cursor: pointer;
 }
 
-#calendar tbody td {
-  color: #2c567a;
+#calendar2 tbody td {
+  color: rgb(44, 86, 122);
 }
 
-#calendar tbody td:nth-child(n+6),
-#calendar .holiday {
-  color: #e78c5c;
+#calendar2 tbody td:nth-child(n+6),
+#calendar2 .holiday {
+  color: rgb(231, 140, 92);
 }
 
-#calendar tbody td.today {
-  background: #dc0000;
+#calendar2 tbody td.today {
+  background: rgb(220, 0, 0);
   color: #fff;
 }
+
